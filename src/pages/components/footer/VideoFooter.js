@@ -2,16 +2,16 @@ import React from 'react'
 import "./VideoFooter.css"
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 
-function VideoFooter() {
+function VideoFooter({name, description, music}) {
   return (
     <div className='videofooter'>
         <div className='videofooter_text'>
-            <h3>@Fabrício Hiury</h3>
-            <p>Descrição do Vídeo</p>
+            <h3>@{ name }</h3>
+            <p>{ description }</p>
             <div className='videofooter_music'>
                 <GraphicEqIcon className='videofooter_icon'/>
                 <div className='videofootermusic_text'>
-                    <p>Título da Música</p>
+                    <p>{ music }</p>
                 </div>                
             </div>            
         </div>
